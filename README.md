@@ -8,7 +8,7 @@ Other: Web3.js, Metamask
 Following is the flow of the project:  
 1. Index Page shows type of users:  
 ![](screenshots/index.PNG)  
-2. Farmer Dashboard  
+2. Register either as farmer or customer
 ![](screenshots/register.PNG)
 3. Farmer Dashboard  
 ![](screenshots/farmerdashboard.PNG)  
