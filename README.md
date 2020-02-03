@@ -1,6 +1,6 @@
 # BlockCrop-hackit
 Blockchain Dapp made in hack it 2.0, kjsce.  
-Please refer truffle documentation to setup and run the project. \
+Please refer truffle documentation to setup and run the project.      
 Technology stack:  
 Frontend: HTML, CSS, JavaScript  
 Backend: Truffle, language: solidity  
