@@ -1,0 +1,69 @@
+<!-- test file for UI , has no connection with blockchain
+ -->
+<! DOCTYPE html>
+<html lang=”en”>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Customer:Dashboard</title>
+<link rel="stylesheet" type="text/css" href="./css/file.css">
+<!--<script src="./node_modules/web3/dist/web3.min.js"></script>-->
+<!--<link href='./bootstrap.min.css' rel='stylesheet' type='text/css'>-->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  
+ <div class="container">
+ 	<img src="images/dollar.png" height="60px" width="60px"
+ 	 style="display: inline-block;"> &nbsp;&nbsp;&nbsp;<h1 style="display:inline-block;">BlockCrop</h1>
+ 	 
+     <h2>Customer Dashboard</h2><hr>
+<div class="row">
+    <div class="col-lg-2" style="min-width: 400px">
+        <div class="box" style="background-color: black;color:white;"> 
+        <img src="images/list2.svg" width="140px" height="140px"></img>
+		View All</div>
+    </div>
+    <div class="col-lg-2"style="min-width: 400px">
+        <div class="box"> 
+        <img src="images/purchase.svg" width="140px" height="140px"></img>
+		Past Purchases</div>
+    </div>
+</div>
+    <div class="row" id="customeriddashboard"> </div>
+<script>
+    console.log("here");
+      var alllots=document.getElementById("customeriddashboard");
+      let res2=[{"fname":"1000","lid":3,"cont":"9876223221","cropname":"Wheat","quantity":15,"pdate":"4-1-2020"},
+                {"fname":"2000","lid":4,"cont":"9876556223","cropname":"Tea","quantity":5,"pdate":"14-12-2019"},
+                {"fname":"2000","lid":21,"cont":"9876556223","cropname":"Corn","quantity":20,"pdate":"27-1-2020"},
+      ]
+      let tr='';
+      for(var i=0;i<res2.length;i++){
+      tr = tr+'<div class="col-lg-3">';
+      tr += '<div class="lotbox" >'
+      +"<label>" +"Farmer:" + res2[i].fname+"</label>"+"</br>"
+      + "<label>"+ "Lot ID:"+res2[i].lid+"</label>"+"<br>"
+      +"<label>" + "Contact No.:"+res2[i].cont+"</label>"+"<br>"
+      +"<label>" +"Crop: "+ res2[i].cropname+"</label>"+"<br>"
+       +"<label>" +"Quantity: "+res2[i].quantity+" kg"+"</label>"+"<br>"
+       +'<label id="price">' + "Price: "+res2[i].price + "</label>"+"<br>"
+       +"<label>" + "Produce Date: " +res2[i].pdate + "</label>"+"<br>"
+       // +"<label>" + "Expiry Date:"+res2.edate + "</label>"+"<br>"
+       +'<input type="submit" value="order" ;return false;" class="btn btn-primary">'+"</div>"+"</div>";
+        }
+        alllots.innerHTML=tr;
+</script>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+<script src="./js/bootstrap.min.js"></script>
+<!-- <script src="./js/web3.min.js"></script>
+<script src="./js/truffle-contract.js"></script>
+<script src="./js/app.js"></script> -->
+</body>
+</html>
