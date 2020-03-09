@@ -7,7 +7,7 @@ Please refer truffle documentation to setup and run the project.
 Technology stack:  
 Frontend: HTML, CSS, JavaScript  
 Backend: Truffle, language: solidity  
-Other: Web3.js, Metamask  
+Other: Web3.js, Metamask  <br></br>
 Following is the flow of the project:  
 1. Index Page shows type of users:  
 ![](screenshots/index.PNG)  
