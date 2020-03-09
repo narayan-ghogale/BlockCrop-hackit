@@ -1,5 +1,8 @@
 # BlockCrop-hackit
-Blockchain Dapp made in hack it 2.0, kjsce.  
+Blockchain Dapp made in hack it 2.0, kjsce.  <br></br>
+Winner of Matic's Hackit 2.0 hackathon bounty  <br></br>
+Devfolio link: https://devfolio.co/submissions/blockcrop  <br></br>
+
 Please refer truffle documentation to setup and run the project.      
 Technology stack:  
 Frontend: HTML, CSS, JavaScript  
